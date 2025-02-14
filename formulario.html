@@ -13,19 +13,25 @@
   <h2>Por favor, confirmar asistencia:</h2>
 
   <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+    <!-- falta usar una etiqueta label en los input y agregar un required para que si tengan que llenar todo  -->
+
+    <label for="name">Nombre:</label>
+     <input type="text" name="name" id="name" required>
     <br />
-    Edad <input type="number" name="age" id="age">
+    <label for="age">Edad:</label>
+     <input type="number" name="age" id="age" required>
     <br />
 
-    Nacionalidad
-    <select name="nationality" id="nationality">
+    <label for="nationality">nacionalidad:</label>
+    <select name="nationality" id="nationality" required>
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
       <option value="per">Peruana</option>
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
+    
+  
     <input type="submit">
   </form>
 
@@ -34,7 +40,7 @@
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="/formulario.js"></script> <!-- la ruta estaba mal y no abria-->
 </body>
 
 </html>
